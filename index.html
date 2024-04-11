@@ -16,23 +16,21 @@
 </nav>
 
 <div class="container mt-5">
-    <div id="orderResult">
-        <h3 class="mb-3">Resultado de Órdenes</h3>
+    <div id="orderResult" class="group">
+        <h3 class="mb-3">Órdenes</h3>
         <div id="orderResultContent"></div>
     </div>
-    <div class="mt-4">
-        <button id="startRecognition" class="btn btn-primary">Iniciar Reconocimiento de Voz</button>
-    </div>
+
     <div class="mt-3">
         <h5>Comandos</h5>
         <ul class="list-group">
-            <li class="list-group-item"><strong>Abre Google.</strong></li>
-            <li class="list-group-item"><strong>Abre una nueva pestaña y cierrala en 2 segundos.</strong></li>
-            <li class="list-group-item"><strong>Abre una nueva pestaña y cierrala en 5 segundos.</strong></li>
-            <li class="list-group-item"><strong>Abre una nueva pestaña con un tamaño de 800 por 600.</strong></li>
+            <li class="list-group-item"><strong>Abre Google:</strong>: Abre google en una nueva pestaña  </li>
+            <li class="list-group-item"><strong>Abre una nueva pestaña y cierrala en 2 segundos</strong>: Abre una nueva pestaña en blanco, la cual cierra en los próximos 2 segundos de ser abierta</li>
+            <li class="list-group-item"><strong>Abre una nueva pestaña y cierrala en 5 segundos</strong>: Abre una nueva pestaña en blanco, la cual cierra en los próximos 5 segundos</li>
+            <li class="list-group-item"><strong>Abre una nueva ventana con un tamaño de 800 por 600</strong>: Abre una nueva ventana del navegador con un ancho de 800 x 600 px</li>
             <!-- <li class="list-group-item"><strong>Cerrar pestaña actual.</strong></li> -->
             <li class="list-group-item"><strong>Cerrar Navegador.</strong> -> No funciona</li>
-            <li class="list-group-item"><strong>Cambiar tamaño a 16 pixeles.</strong></li>
+            <li class="list-group-item"><strong>Cambiar tamaño a 16 pixeles</strong>: Cambia el tamaño del texto de abajo "Hola Mundo" a 16px</li>
         </ul>
     </div>
 </div>
@@ -41,6 +39,15 @@
     <span id="texto">Hola Mundo</span>
 </div>
 
-<script src="main.js"></script>
+<div class="documentation container mt-2 group">
+    <h3>Cómo utilizar el programa</h3>
+      <p>Para utilizar el programa basta solamente con decir el nombre "Helen" y después decir la instrucción que se desea realizar de los comandos de la lista anterior en negritas.</p>
+      <p>Por ejemplo: "Helen Abre Google"</p>
+      <p>Esto hará que se reconozca el comando de voz y se realice la acción solicitada.</p>
+
+      
+</div>
+
+<script type="module" src="js/app.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ body {
     max-width: 800px;
 }
 
-#orderResult {
+.group {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
