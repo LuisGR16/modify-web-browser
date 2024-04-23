@@ -20,6 +20,11 @@ export function interpretCommand(result) {
                 insertarJson("Visitar Google");
                 window.open('https://www.google.com/');
             }
+            if (result.includes("busca osos pandas")){
+                orderResultDiv.innerHTML = `<p>Orden identificada: <strong>${result}</strong></p>`;
+                insertarJson("Buscar pandas");
+                window.open('https://www.google.com/search?q=pandas+animales&sca_esv=5d0811d5ae0715ef&sxsrf=ACQVn0-1bkGYJQ5k8ZLJtZ64-gj8Pq8Pjg%3A1713887693767&ei=zdknZsHBLsOvur8PsoSLuAM&gs_ssp=eJzj4tDP1TcwTsoyNGD04i9IzEtJLFZIzMvMTcxJLQYAbNMIqQ&oq=pandas+anoimales&gs_lp=Egxnd3Mtd2l6LXNlcnAiEHBhbmRhcyBhbm9pbWFsZXMqAggAMgcQLhiABBgNMgYQABgNGB4yCBAAGAUYDRgeMgoQABgFGA0YHhgPMggQABgIGA0YHjIIEAAYCBgNGB4yCBAAGAgYDRgeMgoQABgIGA0YHhgPMgoQABgIGA0YHhgPMgoQABgIGA0YHhgPMhYQLhiABBgNGJcFGNwEGN4EGN8E2AEBSM4hUKACWO0QcAJ4AZABAJgBrAGgAaYMqgEEMC4xMbgBA8gBAPgBAZgCDqAC7hXCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICEBAAGIAEGLEDGEMYgwEYigXCAgoQABiABBhDGIoFwgIFEAAYgATCAggQLhiABBixA8ICBRAuGIAEwgIHEAAYgAQYE8ICCBAAGBMYFhgewgIFECEYoAHCAgcQABiABBgNwgIIEAAYDRgeGA-YAwCIBgGQBgq6BgYIARABGBSSBwgyLjExLjYtMaAHunQ&sclient=gws-wiz-serp');
+            }
 
             //Crea una pestaña nueva en el navegador
             if (result.includes("abre una nueva pestaña y ciérrala en dos segundos") || result.includes("abre una nueva pestaña y ciérrala en 2 segundos")){

@@ -1,5 +1,4 @@
 // Función para obtener los datos de acciones realizadas
-
 export function obtenerJson() {
     // La función trabaja con promesas para asegurar que los datos se obtengan antes de continuar
     return new Promise((resolve, reject) => {
