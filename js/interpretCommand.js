@@ -1,6 +1,8 @@
 import { insertarJson } from './sendData.js';
 // Función para interpretar los comandos de voz
 export function interpretCommand(result) {
+    result = result.replace(".", "");
+    result = result.replace(",", "");
     //Definicion de elementos a modificar en el programa
     const orderResultDiv = document.getElementById('orderResult');
     const controlTexto = document.getElementById("texto");
